@@ -1,0 +1,97 @@
+<!DOCTYPE html><html style="height: 100%;"><head>
+                <meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+                <title>-</title>
+                <link type="image/ico" rel="shortcut icon" href="/all_in_one_theme/static/src/img/login_logo.png">
+        <link rel="preload" href="/web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" crossorigin="">
+        <link type="text/css" rel="stylesheet" href="/web/assets/10817142-3dec679/web.assets_frontend.min.css" data-asset-bundle="web.assets_frontend" data-asset-version="3dec679">
+                <script id="web.layout.odooscript" type="text/javascript">
+                    var odoo = {
+                        csrf_token: "054900a1e6908bf6d1f92d5019ebd25efb85f446o1777041903",
+                        debug: "",
+                    };
+                </script>
+        <script type="text/javascript">
+            odoo.__session_info__ = {"is_admin": false, "is_system": false, "is_website_user": false, "user_id": false, "is_frontend": true, "profile_session": null, "profile_collectors": null, "profile_params": null, "show_effect": true, "bundle_params": {"lang": "en_US"}};
+            if (!/(^|;\s)tz=/.test(document.cookie)) {
+                const userTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                document.cookie = `tz=${userTZ}; path=/`;
+            }
+        </script>
+        <script defer="defer" type="text/javascript" src="/web/assets/3611421-f29ee07/web.assets_frontend_minimal.min.js" data-asset-bundle="web.assets_frontend_minimal" data-asset-version="f29ee07"></script>
+        <script defer="defer" type="text/javascript" data-asset-bundle="web.assets_frontend_lazy" data-asset-version="f2bdb85" src="/web/assets/10823891-f2bdb85/web.assets_frontend_lazy.min.js"></script>
+
+                
+            </head>
+            <body class="login--page o_web_client o_lazy_js_waiting">
+                <div id="wrapwrap" class="">
+                <main>
+                    
+            <div class="login--container vw-100">
+                <div class="col-lg-6 offset-lg-3 col-12 p-5 align-self-center">
+                    <div class="w-100 text-center">
+                        <img src="/all_in_one_theme/static/src/img/login_logo.png" alt="Logo" class="img mb-4" height="200px">
+                    </div>
+                    <div class="col-lg-8 col-12 offset-lg-2">
+                        
+            <form class="oe_login_form" role="form" method="post" onsubmit="this.action = '/web/login' + location.hash" action="/web/login">
+                <input type="hidden" name="csrf_token" value="054900a1e6908bf6d1f92d5019ebd25efb85f446o1777041903">
+
+                
+
+                <div class="form-group field-login">
+                    <label for="login" class="col-form-label">Nom d'utilisateur</label>
+                    <input type="text" placeholder="Nom d'utilisateur" name="login" id="login" required="required" autofocus="autofocus" autocapitalize="off" class="form-control shadow-none ">
+                </div>
+
+                <div class="form-group field-password">
+                    <label for="password" class="col-form-label">Mot de passe</label>
+                    <input type="password" placeholder="Mot de passe" name="password" id="password" required="required" autocomplete="current-password" maxlength="4096" class="form-control shadow-none ">
+                    <i class="fa fa-eye-slash" id="togglePassword" onclick="myFunction(event)"></i>
+                </div>
+
+                <script>
+                    function myFunction(event) {
+                        const togglePassword = document.querySelector("#togglePassword");
+                        const password = document.querySelector("#password");
+
+                        event.preventDefault()
+                        const type = password.getAttribute("type") === "password" ? "text" : "password";
+                        password.setAttribute("type", type);
+                        
+                        // toggle the icon
+                        event.target.classList.toggle("fa-eye");
+                        event.target.classList.toggle("fa-eye-slash");
+                    }
+                </script>
+
+
+                <div class="clearfix oe_login_buttons mb-1 pt-3">
+                    <button type="submit" class="btn btn-primary btn-block shadow-none w-100">Connexion</button>
+                <div class="justify-content-between mt-2 d-flex small">
+                    <a href="/web/signup?">Vous n'avez pas de compte ?</a>
+                    <a href="/web/reset_password?">Réinitialiser le mot de passe</a>
+                </div>
+                    
+                </div>
+
+                <input type="hidden" name="redirect">
+            </form>
+
+        
+
+                    </div>
+                     <div class="w-100 text-center" style="position: fixed;left: 0;bottom: 0;padding-bottom:8px">
+                         <div style="font-size: 18px;">Fourni par : <a href="https://www.notaires.org.ma" style="font-weight: bold;"> Conseil national de l'ordre des notaires du maroc </a></div>
+
+                    </div>
+                </div>
+            </div>
+        
+                </main>
+                
+            </div>
+        
+        </body></html>
